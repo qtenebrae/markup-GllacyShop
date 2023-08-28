@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -124,7 +124,7 @@
                     присыпкой из белого шоколада
                   </p></a
                 >
-                <p class="hits-list--item-cost">355₽<span>/кг</span></p>
+                <p class="hits-list--item-cost">355₽ <span>/кг</span></p>
               </li>
               <li class="hits-list--item">
                 <img src="img/hit-4.png" alt="" />
@@ -134,7 +134,7 @@
                     карамельной подливкой
                   </p></a
                 >
-                <p class="hits-list--item-cost">415₽<span>/кг</span></p>
+                <p class="hits-list--item-cost">415₽ <span>/кг</span></p>
               </li>
             </ul>
           </section>
@@ -144,23 +144,23 @@
             <div class="container">
               <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
               <ul class="advantages-list">
-                <li class="advantages-list--item">
+                <li class="advantages-list--item advantages-list--item-icecream">
                   Все наше мороженое изготавливается на собственном <br />
                   производстве, с использованием современного оборудования<br />
                   и проверенных временем технологий.
                 </li>
-                <li class="advantages-list--item">
+                <li class="advantages-list--item advantages-list--item-cow">
                   Закупка ингредиентов производится только у проверенных <br />
                   фермерских хозяйств и компаний, с которыми нас связывает <br />
                   долговременное сотрудничество.
                 </li>
-                <li class="advantages-list--item">
+                <li class="advantages-list--item advantages-list--item-eco">
                   Для приготовления мороженого используются настоящие <br />
                   сливки и молоко высочайшего качества. Все дополнительные <br />
                   ингредиенты и добавки произведены из натурального, <br />
                   экологически чистого сырья.
                 </li>
-                <li class="advantages-list--item">
+                <li class="advantages-list--item advantages-list--item-therm">
                   Доставка нашего мороженого до заказчиков осуществляется <br />
                   в специальном термопаке, который не дает мороженому <br />
                   растаять в пути и позволяет сохранить превосходный вкус.
@@ -168,24 +168,30 @@
               </ul>
             </div>
           </section>
-          <div>
-            <!-- news -->
-            <section>
-              <h2>Новости</h2>
-              <p>Новое в нашем блоге</p>
-              <a href="">10 способов сервировки фруктовых щербетов к столу</a>
+
+          <div class="news--subcribe">
+            <section class="news">
+              <h2 class="visually-hidden">Новости</h2>
+              <p class="title">Новое в нашем блоге</p>
+              <a href=""
+                ><p>
+                  10 способов сервировки<br />
+                  фруктовых щербетов к<br />
+                  столу
+                </p></a
+              >
             </section>
-            <!-- subscribe -->
-            <section>
-              <h2>Форма для подписки</h2>
+            <section class="subscribe">
+              <h2 class="visually-hidden">Форма для подписки</h2>
               <p>
-                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе <br />
+                всего самого вкусного, что у нас происходит. Обещаем не спамить <br />
                 и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form action="">
-                <label for="subscribe-form">Ваш емейл</label>
+                <label for="subscribe-form" class="visually-hidden">Ваш емейл</label>
                 <input id="subscribe-form" type="email" name="email" value="" placeholder="email@example.com" />
-                <button>Отправить</button>
+                <button class="button">Отправить</button>
               </form>
             </section>
           </div>

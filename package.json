@@ -1,0 +1,18 @@
+{
+  "name": "markup-gllacyshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylelint": "npx stylelint \"**/*.css\" --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^3.0.3",
+    "stylelint-order-config-standard": "^0.1.3"
+  }
+}
