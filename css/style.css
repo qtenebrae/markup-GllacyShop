@@ -230,6 +230,7 @@ body {
 }
 
 .button {
+  cursor: pointer;
   text-decoration: none;
 
   color: #fff;
@@ -239,6 +240,10 @@ body {
   background: linear-gradient(#f26843, #e74b36);
   box-shadow: 0 2px 2px rgb(172 16 0 / 60%);
   text-shadow: 0 2px 5px rgb(160 32 11 / 70%);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .button:hover {
@@ -366,9 +371,6 @@ body {
   bottom: 24px;
 
   padding: 11px 22px;
-
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .hits {
@@ -562,12 +564,6 @@ body {
   bottom: 42px;
 
   padding: 10px 20px;
-
-  font-family: Roboto, sans-serif;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
 }
 
 .subscribe input {
@@ -575,4 +571,148 @@ body {
   height: 44px;
   margin-top: 20px;
   padding: 0 10px;
+}
+
+.onmap {
+  position: relative;
+
+  padding: 30px 0 10px;
+}
+
+.onmap::before {
+  position: absolute;
+  top: 170px;
+  left: 265px;
+
+  content: url("../img/pin.svg");
+}
+
+.about {
+  position: absolute;
+  top: 92px;
+  right: 28px;
+
+  width: 302px;
+  height: 305px;
+  padding: 30px 27px;
+
+  border-radius: 10px;
+  background-color: white;
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 17px;
+
+  color: #323232;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.about strong {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.about b {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.about button {
+  position: absolute;
+  bottom: 30px;
+  left: 28px;
+
+  padding: 11px 28px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+
+  height: 100px;
+
+  padding: 0 2.3%;
+}
+
+.social-networks {
+  display: flex;
+
+  margin: 0;
+  margin-top: 17px;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-networks svg {
+  margin-right: 9px;
+
+  border: 3px solid rgb(255 255 255 / 30%);
+  border-radius: 50%;
+}
+
+.social-networks svg g,
+.social-networks svg path {
+  fill: rgb(255 255 255 / 80%);
+}
+
+.social-networks svg:hover g,
+.social-networks svg:hover path {
+  fill: white;
+}
+
+.social-networks svg:active g,
+.social-networks svg:active path {
+  fill: rgb(255 255 255 / 60%);
+}
+
+.documents {
+  display: flex;
+
+  margin-top: 14px;
+}
+
+.documents::before {
+  margin-right: 6px;
+
+  content: url("../img/heart.svg");
+
+  font-weight: 700;
+}
+
+.documents ul {
+  margin: 0 30px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.documents a {
+  color: white;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+
+  text-decoration-color: rgb(255 255 255 / 30%);
+}
+
+.html-academy p {
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.html-academy p a {
+  color: white;
+  text-decoration-color: rgb(255 255 255 / 40%);
 }
