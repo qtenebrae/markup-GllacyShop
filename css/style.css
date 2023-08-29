@@ -571,6 +571,10 @@ body {
   height: 44px;
   margin-top: 20px;
   padding: 0 10px;
+
+  border: 1px solid rgb(0 0 0 / 20%);
+
+  border-radius: 5px;
 }
 
 .onmap {
@@ -656,20 +660,15 @@ body {
 
   border: 3px solid rgb(255 255 255 / 30%);
   border-radius: 50%;
-}
 
-.social-networks svg g,
-.social-networks svg path {
   fill: rgb(255 255 255 / 80%);
 }
 
-.social-networks svg:hover g,
-.social-networks svg:hover path {
+.social-networks svg:hover {
   fill: white;
 }
 
-.social-networks svg:active g,
-.social-networks svg:active path {
+.social-networks svg:active {
   fill: rgb(255 255 255 / 60%);
 }
 
