@@ -110,6 +110,10 @@ body {
 .site-navigation a {
   padding: 6px 13.5px 8px;
 
+  transition-duration: 0.2s;
+
+  transition-property: color, background-color, box-shadow;
+
   text-decoration: underline;
 
   color: #fff;
@@ -142,6 +146,9 @@ body {
 
 .user-navigation button {
   cursor: pointer;
+  transition-duration: 0.2s;
+
+  transition-property: color, background-color;
 
   color: #fff;
   border: none;
@@ -644,32 +651,73 @@ body {
   padding: 0 2.3%;
 }
 
-.social-networks {
+.social-media {
   display: flex;
 
   margin: 0;
-  margin-top: 17px;
+  margin-top: 18px;
 
   padding: 0;
 
   list-style: none;
 }
 
-.social-networks svg {
-  margin-right: 9px;
+.social-media a {
+  position: relative;
 
-  border: 3px solid rgb(255 255 255 / 30%);
+  display: block;
+
+  width: 38px;
+  height: 38px;
+  margin-right: 11px;
+
+  transition: all 0.2s;
+
+  border: 4px solid rgb(255 255 255 / 50%);
   border-radius: 50%;
-
-  fill: rgb(255 255 255 / 80%);
+  background: transparent;
 }
 
-.social-networks svg:hover {
-  fill: white;
+.social-media a::before {
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  content: "";
+
+  transition: all 0.2s;
+
+  transform: translate(-1px, -1px);
+
+  opacity: 0.8;
+
+  border-radius: 50%;
 }
 
-.social-networks svg:active {
-  fill: rgb(255 255 255 / 60%);
+.social-media a:hover::before {
+  opacity: 1;
+}
+
+.social-media a:active::before {
+  opacity: 0.8;
+  box-shadow: inset 0 2px 2px rgb(0 0 0 / 50%);
+}
+
+.social-media :nth-child(1) a::before {
+  background-image: url("../img/twitter.svg");
+}
+
+.social-media :nth-child(2) a::before {
+  background-image: url("../img/instagram.svg");
+}
+
+.social-media :nth-child(3) a::before {
+  background-image: url("../img/fb.svg");
+}
+
+.social-media :nth-child(4) a::before {
+  background-image: url("../img/vk.svg");
 }
 
 .documents {
