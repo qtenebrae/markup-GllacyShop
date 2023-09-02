@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <input type="radio" name="promotions-radio" id="promotions-slide1--togle" class="none" checked />
-    <input type="radio" name="promotions-radio" id="promotions-slide2--togle" class="none" />
-    <input type="radio" name="promotions-radio" id="promotions-slide3--togle" class="none" />
+    <input type="radio" name="promotions-radio" id="promotions-slide1__togle" class="none" checked />
+    <input type="radio" name="promotions-radio" id="promotions-slide2__togle" class="none" />
+    <input type="radio" name="promotions-radio" id="promotions-slide3__togle" class="none" />
 
     <div class="page-wrapper">
       <div class="content-wrapper">
         <header class="main-header">
-          <div class="container">
-            <img src="img/logo.svg" alt="Gllacy Shop Logo" class="main-header-logo" />
+          <div class="main-header__container">
+            <img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64" />
             <nav class="main-navigation">
               <ul class="site-navigation">
                 <li><a href="#">Каталог</a></li>
@@ -25,13 +25,13 @@
                 <li><a href="#">О Компании</a></li>
               </ul>
               <ul class="user-navigation">
-                <li><button type="button" class="main-header-button--search"></button></li>
-                <li><button type="button" class="main-header-button--login">Вход</button></li>
-                <li><button type="button" class="main-header-button--basket">Пусто</button></li>
+                <li><button type="button" class="main-header__button_type_search"></button></li>
+                <li><button type="button" class="main-header__button_type_login">Вход</button></li>
+                <li><button type="button" class="main-header__button_type_basket">Пусто</button></li>
               </ul>
             </nav>
           </div>
-          <div class="header-information">
+          <div class="main-header__information">
             <div>
               <p>С 10 до 20, ежедневно</p>
               <br />
@@ -44,25 +44,25 @@
           <section class="promotions-slider">
             <h2 class="visually-hidden">Рекламные акции</h2>
             <div class="slider-control">
-              <label for="promotions-slide1--togle"></label>
-              <label for="promotions-slide2--togle"></label>
-              <label for="promotions-slide3--togle"></label>
+              <label for="promotions-slide1__togle"></label>
+              <label for="promotions-slide2__togle"></label>
+              <label for="promotions-slide3__togle"></label>
             </div>
-            <div class="promotions-slider--slide" id="promotions-slide1">
+            <div class="promotions-slider__slide" id="promotions-slide1">
               <h3>
                 Крем-брюле и пломбир <br />
                 с малиновым джемом
               </h3>
               <a href="" class="button">Давайте оба!</a>
             </div>
-            <div class="promotions-slider--slide" id="promotions-slide2">
+            <div class="promotions-slider__slide" id="promotions-slide2">
               <h3>
                 Шоколадный пломбир <br />
                 и лимонный сорбет
               </h3>
               <a href="" class="button">Давайте оба!</a>
             </div>
-            <div class="promotions-slider--slide" id="promotions-slide3">
+            <div class="promotions-slider__slide" id="promotions-slide3">
               <h3>
                 Пломбир с помадкой <br />
                 и клубничный щербет
@@ -72,8 +72,8 @@
           </section>
           <section class="best-offers">
             <h2 class="visually-hidden">Лучшие предложения</h2>
-            <div class="container">
-              <div class="container--item raspberries">
+            <div class="best-offers__container">
+              <div class="best-offers__container__item raspberries">
                 <h3>Малинка даром!</h3>
                 <p>
                   При покупке 2 кг любого фруктового мороженого, добавим <br />
@@ -81,7 +81,7 @@
                 </p>
                 <a href="#" class="button">Хочу варенье!</a>
               </div>
-              <div class="container--item chocolate">
+              <div class="best-offers__container__item chocolate">
                 <h3>Шоколадки даром!</h3>
                 <p>
                   При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br />
@@ -93,71 +93,71 @@
           </section>
           <section class="hits">
             <h2 class="visually-hidden">Хиты продаж</h2>
-            <ul class="hits-list">
-              <li class="hits-list--item">
+            <ul class="hits__list">
+              <li class="hits__list__item">
                 <img src="img/hit-1.png" alt="" />
                 <a href="#"
-                  ><p class="hits-list--item-link">
+                  ><p class="hits__list__item__link">
                     Сливочное с апельсиновым <br />
                     джемом и цитрусовой стружкой
                   </p></a
                 >
-                <p class="hits-list--item-cost">310₽ <span>/кг</span></p>
+                <p class="hits__list__item__cost">310₽ <span>/кг</span></p>
               </li>
-              <li class="hits-list--item">
+              <li class="hits__list__item">
                 <img src="img/hit-2.png" alt="" />
                 <a href="#"
-                  ><p class="hits-list--item-link">
+                  ><p class="hits__list__item__link">
                     Сливочно-кофейное с кусочками <br />
                     шоколада
                   </p></a
                 >
-                <p class="hits-list--item-cost">380₽ <span>/кг</span></p>
+                <p class="hits__list__item__cost">380₽ <span>/кг</span></p>
               </li>
-              <li class="hits-list--item">
+              <li class="hits__list__item">
                 <img src="img/hit-3.png" alt="" />
                 <a href="#"
-                  ><p class="hits-list--item-link">
+                  ><p class="hits__list__item__link">
                     Сливочно-клубничное с <br />
                     присыпкой из белого шоколада
                   </p></a
                 >
-                <p class="hits-list--item-cost">355₽ <span>/кг</span></p>
+                <p class="hits__list__item__cost">355₽ <span>/кг</span></p>
               </li>
-              <li class="hits-list--item">
+              <li class="hits__list__item">
                 <img src="img/hit-4.png" alt="" />
                 <a href="#"
-                  ><p class="hits-list--item-link">
+                  ><p class="hits__list__item__link">
                     Сливочное крем-брюле с <br />
                     карамельной подливкой
                   </p></a
                 >
-                <p class="hits-list--item-cost">415₽ <span>/кг</span></p>
+                <p class="hits__list__item__cost">415₽ <span>/кг</span></p>
               </li>
             </ul>
           </section>
           <section class="advantages">
             <h2 class="visually-hidden">Наши преимущества</h2>
-            <div class="container">
+            <div class="advantages__container">
               <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-              <ul class="advantages-list">
-                <li class="advantages-list--item advantages-list--item-icecream">
+              <ul class="advantages__list">
+                <li class="advantages__list__item advantages__list__item_type_icecream">
                   Все наше мороженое изготавливается на собственном <br />
                   производстве, с использованием современного оборудования<br />
                   и проверенных временем технологий.
                 </li>
-                <li class="advantages-list--item advantages-list--item-cow">
+                <li class="advantages__list__item advantages__list__item_type_cow">
                   Закупка ингредиентов производится только у проверенных <br />
                   фермерских хозяйств и компаний, с которыми нас связывает <br />
                   долговременное сотрудничество.
                 </li>
-                <li class="advantages-list--item advantages-list--item-eco">
+                <li class="advantages__list__item advantages__list__item_type_eco">
                   Для приготовления мороженого используются настоящие <br />
                   сливки и молоко высочайшего качества. Все дополнительные <br />
                   ингредиенты и добавки произведены из натурального, <br />
                   экологически чистого сырья.
                 </li>
-                <li class="advantages-list--item advantages-list--item-therm">
+                <li class="advantages__list__item advantages__list__item_type_therm">
                   Доставка нашего мороженого до заказчиков осуществляется <br />
                   в специальном термопаке, который не дает мороженому <br />
                   растаять в пути и позволяет сохранить превосходный вкус.
@@ -165,10 +165,10 @@
               </ul>
             </div>
           </section>
-          <div class="news--subcribe">
+          <div class="news-and-subcribe">
             <section class="news">
               <h2 class="visually-hidden">Новости</h2>
-              <p class="title">Новое в нашем блоге</p>
+              <p class="news__title">Новое в нашем блоге</p>
               <a href="#"
                 ><p>
                   10 способов сервировки<br />
@@ -198,7 +198,7 @@
               height="430"
               frameborder="0"
             ></iframe>
-            <div class="about">
+            <div class="onmap__about">
               <p>
                 Адрес главного офиса <br />
                 и офлайн-магазина: <br />
@@ -219,7 +219,7 @@
         <footer class="main-footer">
           <ul class="social-media">
             <li>
-              <a href="https://github.com/qtenebrae/markup-GllacyShop" aria-label="Твиттер" class="social-twitter"></a>
+              <a href="https://github.com/qtenebrae/markup-GllacyShop" aria-label="Твиттер"></a>
             </li>
             <li>
               <a href="https://github.com/qtenebrae/markup-GllacyShop" aria-label="Инстаграмм"></a>

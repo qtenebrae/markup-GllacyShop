@@ -52,17 +52,17 @@ body {
   background-position: top center;
 }
 
-#promotions-slide1--togle:checked ~ .page-wrapper {
+#promotions-slide1__togle:checked ~ .page-wrapper {
   background-color: #849d8f;
   background-image: url("../img/promotions-icecream-1.png");
 }
 
-#promotions-slide2--togle:checked ~ .page-wrapper {
+#promotions-slide2__togle:checked ~ .page-wrapper {
   background-color: #8996a6;
   background-image: url("../img/promotions-icecream-2.png");
 }
 
-#promotions-slide3--togle:checked ~ .page-wrapper {
+#promotions-slide3__togle:checked ~ .page-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/promotions-icecream-3.png");
 }
@@ -79,13 +79,8 @@ body {
   padding: 9px 2.3%;
 }
 
-.main-header .container {
+.main-header__container {
   display: flex;
-}
-
-.main-header-logo {
-  width: 154px;
-  height: 64px;
 }
 
 .main-navigation {
@@ -165,14 +160,14 @@ body {
   background-color: #f8f7f4;
 }
 
-.main-header-button--search {
+.main-header__button_type_search {
   position: relative;
 
   width: 32px;
   height: 32px;
 }
 
-.main-header-button--search::before {
+.main-header__button_type_search::before {
   position: absolute;
   top: 7px;
   left: 7px;
@@ -180,18 +175,18 @@ body {
   content: url("../img/loupe.svg");
 }
 
-.main-header-button--search:hover::before {
+.main-header__button_type_search:hover::before {
   content: url("../img/loupe--black.svg");
 }
 
-.main-header-button--login,
-.main-header-button--basket {
+.main-header__button_type_login,
+.main-header__button_type_basket {
   position: relative;
 
   padding: 8px 17px 8px 45px;
 }
 
-.main-header-button--login::before {
+.main-header__button_type_login::before {
   position: absolute;
   top: 5px;
   left: 17px;
@@ -199,11 +194,11 @@ body {
   content: url("../img/entrance.svg");
 }
 
-.main-header-button--login:hover::before {
+.main-header__button_type_login:hover::before {
   content: url("../img/entrance--black.svg");
 }
 
-.main-header-button--basket::before {
+.main-header__button_type_basket::before {
   position: absolute;
   top: 5px;
   left: 17px;
@@ -211,11 +206,11 @@ body {
   content: url("../img/basket.svg");
 }
 
-.main-header-button--basket:hover::before {
+.main-header__button_type_basket:hover::before {
   content: url("../img/basket-red.svg");
 }
 
-.header-information {
+.main-header__information {
   display: flex;
   justify-content: right;
 
@@ -226,12 +221,12 @@ body {
   line-height: 16px;
 }
 
-.header-information p {
+.main-header__information p {
   margin: 0;
   margin-bottom: -11px;
 }
 
-.header-information span {
+.main-header__information span {
   font-size: 22px;
   line-height: 24px;
 }
@@ -274,7 +269,7 @@ body {
   font-weight: 700;
 }
 
-.promotions-slider .promotions-slider--slide {
+.promotions-slider__slide {
   display: none;
 }
 
@@ -316,15 +311,15 @@ body {
   background-color: rgb(255 255 255 / 30%);
 }
 
-#promotions-slide1--togle:checked ~ .page-wrapper label[for="promotions-slide1--togle"],
-#promotions-slide2--togle:checked ~ .page-wrapper label[for="promotions-slide2--togle"],
-#promotions-slide3--togle:checked ~ .page-wrapper label[for="promotions-slide3--togle"] {
+#promotions-slide1__togle:checked ~ .page-wrapper label[for="promotions-slide1__togle"],
+#promotions-slide2__togle:checked ~ .page-wrapper label[for="promotions-slide2__togle"],
+#promotions-slide3__togle:checked ~ .page-wrapper label[for="promotions-slide3__togle"] {
   background-color: rgb(255 255 255);
 }
 
-#promotions-slide1--togle:checked ~ .page-wrapper #promotions-slide1,
-#promotions-slide2--togle:checked ~ .page-wrapper #promotions-slide2,
-#promotions-slide3--togle:checked ~ .page-wrapper #promotions-slide3 {
+#promotions-slide1__togle:checked ~ .page-wrapper #promotions-slide1,
+#promotions-slide2__togle:checked ~ .page-wrapper #promotions-slide2,
+#promotions-slide3__togle:checked ~ .page-wrapper #promotions-slide3 {
   display: block;
 }
 
@@ -336,12 +331,12 @@ body {
   font-weight: 700;
 }
 
-.best-offers .container {
+.best-offers__container {
   display: flex;
   justify-content: space-between;
 }
 
-.best-offers .container--item {
+.best-offers__container__item {
   position: relative;
 
   width: 560px;
@@ -403,28 +398,28 @@ body {
   text-decoration-color: rgb(255 255 255 / 40%);
 }
 
-.hits p.hits-list--item-link {
+.hits__list__item__link {
   margin-top: 10px;
 
   text-align: center;
 }
 
-.hits-list {
+.hits__list {
   display: flex;
   justify-content: space-between;
 }
 
-.hits-list--item {
+.hits__list__item {
   position: relative;
 }
 
-.hits-list--item::before {
+.hits__list__item::before {
   position: absolute;
 
   content: url("../img/hit.svg");
 }
 
-.hits-list--item-cost {
+.hits__list__item__cost {
   position: absolute;
   top: 165px;
 
@@ -435,7 +430,7 @@ body {
   line-height: 45px;
 }
 
-.hits-list--item-cost span {
+.hits__list__item__cost span {
   margin-left: -10px;
 
   font-size: 30px;
@@ -447,7 +442,7 @@ body {
   color: #323232;
 }
 
-.advantages .container {
+.advantages__container {
   width: 1146px;
   height: 306px;
 
@@ -465,7 +460,7 @@ body {
   line-height: 30px;
 }
 
-.advantages-list {
+.advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -476,38 +471,38 @@ body {
   list-style: none;
 }
 
-.advantages-list--item {
+.advantages__list__item {
   position: relative;
 
   padding: 12px 20px 10px 55px;
 }
 
-.advantages-list--item-icecream::before,
-.advantages-list--item-cow::before,
-.advantages-list--item-eco::before,
-.advantages-list--item-therm::before {
+.advantages__list__item_type_icecream::before,
+.advantages__list__item_type_cow::before,
+.advantages__list__item_type_eco::before,
+.advantages__list__item_type_therm::before {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.advantages-list--item-icecream::before {
+.advantages__list__item_type_icecream::before {
   content: url("../img/ice-cream.svg");
 }
 
-.advantages-list--item-cow::before {
+.advantages__list__item_type_cow::before {
   content: url("../img/cow.svg");
 }
 
-.advantages-list--item-eco::before {
+.advantages__list__item_type_eco::before {
   content: url("../img/eco.svg");
 }
 
-.advantages-list--item-therm::before {
+.advantages__list__item_type_therm::before {
   content: url("../img/thermometer.svg");
 }
 
-.news--subcribe {
+.news-and-subcribe {
   display: flex;
   justify-content: space-between;
 
@@ -524,7 +519,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.news p.title {
+.news .news__title {
   margin: 13px 10px 3px;
 
   color: #323232;
@@ -598,7 +593,7 @@ body {
   content: url("../img/pin.svg");
 }
 
-.about {
+.onmap__about {
   position: absolute;
   top: 92px;
   right: 28px;
@@ -611,7 +606,7 @@ body {
   background-color: white;
 }
 
-.about p {
+.onmap__about p {
   margin: 0;
   margin-bottom: 17px;
 
@@ -622,19 +617,19 @@ body {
   line-height: 20px;
 }
 
-.about strong {
+.onmap__about strong {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.about b {
+.onmap__about b {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
 }
 
-.about button {
+.onmap__about button {
   position: absolute;
   bottom: 30px;
   left: 28px;
