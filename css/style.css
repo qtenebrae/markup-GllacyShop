@@ -245,7 +245,8 @@ body {
   height: 32px;
 }
 
-.main-header__button_type_search::before {
+.main-header__button_type_search::before,
+.main-header__button_type_search::after {
   position: absolute;
   top: 7px;
   left: 7px;
@@ -253,8 +254,12 @@ body {
   content: url("../img/loupe.svg");
 }
 
-.main-header__button_type_search:hover::before {
+.main-header__button_type_search::after {
   content: url("../img/loupe--black.svg");
+  transition-duration: 0.2s;
+  transition-property: opacity;
+
+  opacity: 0;
 }
 
 .main-header__button_type_login,
@@ -264,7 +269,8 @@ body {
   padding: 8px 17px 8px 45px;
 }
 
-.main-header__button_type_login::before {
+.main-header__button_type_login::before,
+.main-header__button_type_login::after {
   position: absolute;
   top: 5px;
   left: 17px;
@@ -272,11 +278,16 @@ body {
   content: url("../img/entrance.svg");
 }
 
-.main-header__button_type_login:hover::before {
+.main-header__button_type_login::after {
   content: url("../img/entrance--black.svg");
+  transition-duration: 0.2s;
+  transition-property: opacity;
+
+  opacity: 0;
 }
 
-.main-header__button_type_basket::before {
+.main-header__button_type_basket::before,
+.main-header__button_type_basket::after {
   position: absolute;
   top: 5px;
   left: 17px;
@@ -284,8 +295,18 @@ body {
   content: url("../img/basket.svg");
 }
 
-.main-header__button_type_basket:hover::before {
+.main-header__button_type_basket::after {
   content: url("../img/basket-red.svg");
+  transition-duration: 0.2s;
+  transition-property: opacity;
+
+  opacity: 0;
+}
+
+.main-header__button_type_search:hover::after,
+.main-header__button_type_login:hover::after,
+.main-header__button_type_basket:hover::after {
+  opacity: 1;
 }
 
 .main-header__popup-wrapper_search {
