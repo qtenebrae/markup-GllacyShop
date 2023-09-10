@@ -206,6 +206,8 @@ body {
 }
 
 .main-header__navigation_user {
+  position: relative;
+
   display: flex;
 
   list-style: none;
@@ -289,8 +291,8 @@ body {
 .main-header__popup-wrapper_search {
   position: absolute;
   z-index: 1;
-  top: 57px;
-  right: 241px;
+  top: 32px;
+  right: 211px;
 
   visibility: hidden;
 
@@ -327,8 +329,8 @@ body {
 .main-header__popup-wrapper_login {
   position: absolute;
   z-index: 1;
-  top: 57px;
-  right: 135px;
+  top: 32px;
+  right: 110px;
 
   visibility: hidden;
 
