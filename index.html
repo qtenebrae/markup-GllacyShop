@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gllacy Shop</title>
+    <link rel="shortcut icon" href="img/qtenebrae.png" type="image/x-icon" />
+    <title>Магазин мороженого Gllacy Shop</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -18,16 +19,27 @@
         <header class="main-header">
           <div class="main-header__container">
             <img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64" />
-            <nav class="main-navigation">
-              <ul class="site-navigation">
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О Компании</a></li>
+            <nav class="main-header__navigation">
+              <ul class="main-header__navigation_site">
+                <li>
+                  <a href="catalog.html" class="main-header__nav-link test">Каталог</a>
+                  <div class="main-header__popup-wrapper_catalog">
+                    <ul class="main-header__popup_catalog">
+                      <li><span>Новинки</span></li>
+                      <li><a href="">Сливочное</a></li>
+                      <li><a href="">Щербеты</a></li>
+                      <li><a href="">Фруктовый лед</a></li>
+                      <li><a href="">Мелорин</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#" class="main-header__nav-link">Доставка и оплата</a></li>
+                <li><a href="#" class="main-header__nav-link">О Компании</a></li>
               </ul>
-              <ul class="user-navigation">
-                <li><button type="button" class="main-header__button_type_search"></button></li>
-                <li><button type="button" class="main-header__button_type_login">Вход</button></li>
-                <li><button type="button" class="main-header__button_type_basket">Пусто</button></li>
+              <ul class="main-header__navigation_user">
+                <li><button type="button" class="main_header__button main-header__button_type_search"></button></li>
+                <li><button type="button" class="main_header__button main-header__button_type_login">Вход</button></li>
+                <li><button type="button" class="main_header__button main-header__button_type_basket">Пусто</button></li>
               </ul>
             </nav>
           </div>
@@ -43,7 +55,7 @@
           <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
           <section class="promotions-slider">
             <h2 class="visually-hidden">Рекламные акции</h2>
-            <div class="slider-control">
+            <div class="promotions-slider__slider-control">
               <label for="promotions-slide1__togle"></label>
               <label for="promotions-slide2__togle"></label>
               <label for="promotions-slide3__togle"></label>
@@ -73,7 +85,7 @@
           <section class="best-offers">
             <h2 class="visually-hidden">Лучшие предложения</h2>
             <div class="best-offers__container">
-              <div class="best-offers__container__item raspberries">
+              <div class="best-offers__item best-offers__item_raspberries">
                 <h3>Малинка даром!</h3>
                 <p>
                   При покупке 2 кг любого фруктового мороженого, добавим <br />
@@ -81,7 +93,7 @@
                 </p>
                 <a href="#" class="button">Хочу варенье!</a>
               </div>
-              <div class="best-offers__container__item chocolate">
+              <div class="best-offers__item best-offers__item_chocolate">
                 <h3>Шоколадки даром!</h3>
                 <p>
                   При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br />
@@ -94,45 +106,45 @@
           <section class="hits">
             <h2 class="visually-hidden">Хиты продаж</h2>
             <ul class="hits__list">
-              <li class="hits__list__item">
+              <li class="hits__item">
                 <img src="img/hit-1.png" alt="" />
-                <a href="#"
-                  ><p class="hits__list__item__link">
+                <a href="#" class="link link_white"
+                  ><p class="hits__link">
                     Сливочное с апельсиновым <br />
                     джемом и цитрусовой стружкой
                   </p></a
                 >
-                <p class="hits__list__item__cost">310₽ <span>/кг</span></p>
+                <p class="hits__cost">310₽ <span>/кг</span></p>
               </li>
-              <li class="hits__list__item">
+              <li class="hits__item">
                 <img src="img/hit-2.png" alt="" />
-                <a href="#"
-                  ><p class="hits__list__item__link">
+                <a href="#" class="link link_white"
+                  ><p class="hits__link">
                     Сливочно-кофейное с кусочками <br />
                     шоколада
                   </p></a
                 >
-                <p class="hits__list__item__cost">380₽ <span>/кг</span></p>
+                <p class="hits__cost">380₽ <span>/кг</span></p>
               </li>
-              <li class="hits__list__item">
+              <li class="hits__item">
                 <img src="img/hit-3.png" alt="" />
-                <a href="#"
-                  ><p class="hits__list__item__link">
+                <a href="#" class="link link_white"
+                  ><p class="hits__link">
                     Сливочно-клубничное с <br />
                     присыпкой из белого шоколада
                   </p></a
                 >
-                <p class="hits__list__item__cost">355₽ <span>/кг</span></p>
+                <p class="hits__cost">355₽ <span>/кг</span></p>
               </li>
-              <li class="hits__list__item">
+              <li class="hits__item">
                 <img src="img/hit-4.png" alt="" />
-                <a href="#"
-                  ><p class="hits__list__item__link">
+                <a href="#" class="link link_white"
+                  ><p class="hits__link">
                     Сливочное крем-брюле с <br />
                     карамельной подливкой
                   </p></a
                 >
-                <p class="hits__list__item__cost">415₽ <span>/кг</span></p>
+                <p class="hits__cost">415₽ <span>/кг</span></p>
               </li>
             </ul>
           </section>
@@ -141,23 +153,23 @@
             <div class="advantages__container">
               <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
               <ul class="advantages__list">
-                <li class="advantages__list__item advantages__list__item_type_icecream">
+                <li class="advantages__item advantages__item_type_icecream">
                   Все наше мороженое изготавливается на собственном <br />
                   производстве, с использованием современного оборудования<br />
                   и проверенных временем технологий.
                 </li>
-                <li class="advantages__list__item advantages__list__item_type_cow">
+                <li class="advantages__item advantages__item_type_cow">
                   Закупка ингредиентов производится только у проверенных <br />
                   фермерских хозяйств и компаний, с которыми нас связывает <br />
                   долговременное сотрудничество.
                 </li>
-                <li class="advantages__list__item advantages__list__item_type_eco">
+                <li class="advantages__item advantages__item_type_eco">
                   Для приготовления мороженого используются настоящие <br />
                   сливки и молоко высочайшего качества. Все дополнительные <br />
                   ингредиенты и добавки произведены из натурального, <br />
                   экологически чистого сырья.
                 </li>
-                <li class="advantages__list__item advantages__list__item_type_therm">
+                <li class="advantages__item advantages__item_type_therm">
                   Доставка нашего мороженого до заказчиков осуществляется <br />
                   в специальном термопаке, который не дает мороженому <br />
                   растаять в пути и позволяет сохранить превосходный вкус.
@@ -165,11 +177,11 @@
               </ul>
             </div>
           </section>
-          <div class="news-and-subcribe">
+          <div class="news-subscribe-wrapper">
             <section class="news">
               <h2 class="visually-hidden">Новости</h2>
               <p class="news__title">Новое в нашем блоге</p>
-              <a href="#"
+              <a href="#" class="link link_black news__link"
                 ><p>
                   10 способов сервировки<br />
                   фруктовых щербетов к<br />
@@ -187,7 +199,7 @@
               <form action="">
                 <label for="subscribe-form" class="visually-hidden">Ваш емейл</label>
                 <input id="subscribe-form" type="email" name="email" value="" placeholder="email@example.com" />
-                <button class="button" type="submit">Отправить</button>
+                <button class="button button_subscribe" type="submit">Отправить</button>
               </form>
             </section>
           </div>
@@ -234,24 +246,24 @@
           <div class="documents">
             <ul>
               <li>
-                <a href="#" style="font-weight: 700">Для поставщиков</a>
+                <a href="#" style="font-weight: 700" class="link link_white">Для поставщиков</a>
               </li>
               <li>
-                <a href="#">О производстве</a>
+                <a href="#" class="link link_white">О производстве</a>
               </li>
             </ul>
             <ul>
               <li>
-                <a href="#">Наши документы</a>
+                <a href="#" class="link link_white">Наши документы</a>
               </li>
               <li>
-                <a href="#">Экологические стандарты</a>
+                <a href="#" class="link link_white">Экологические стандарты</a>
               </li>
             </ul>
           </div>
           <div class="html-academy">
             <a href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="html Academy" width="108" height="39" /></a>
-            <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2019</p>
+            <p>Сделано в <a href="https://htmlacademy.ru/" class="link link_white">HTML Academy</a> &copy; 2023</p>
           </div>
         </footer>
       </div>
