@@ -138,10 +138,6 @@ body {
   visibility: hidden;
 
   padding-top: 5px;
-
-  transition-duration: 0.2s;
-
-  transition-property: visible;
 }
 
 .main-header__nav-link:hover ~ .main-header__popup-wrapper_catalog {
@@ -164,14 +160,15 @@ body {
   border-radius: 5px;
   background-color: #f8f7f4;
 
+  box-shadow: 0 10px 15px 3px rgb(0 0 0/ 50%);
+
   font-size: 14px;
   line-height: 16px;
-
-  box-shadow: 0 10px 15px 3px rgb(0 0 0/ 50%);
 }
 
 .main-header__popup_catalog span {
   display: block;
+
   margin: 0 7px;
 
   padding: 13px 59px 13px 14px;
@@ -186,6 +183,10 @@ body {
 
   padding: 8px 0 8px 20px;
 
+  transition-duration: 0.2s;
+
+  transition-property: background-color;
+
   text-decoration: none;
 
   color: black;
@@ -195,9 +196,13 @@ body {
   background-color: rgb(255 0 0 / 10%);
 }
 
+.main-header__popup_catalog a:active {
+  background-color: rgb(255 0 0 / 30%);
+}
+
 .main-header__popup_catalog li:last-child a {
-  border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .main-header__navigation_user {
@@ -281,6 +286,102 @@ body {
   content: url("../img/basket-red.svg");
 }
 
+.main-header__popup-wrapper_search {
+  position: absolute;
+  z-index: 1;
+  top: 57px;
+  right: 241px;
+
+  visibility: hidden;
+
+  padding-top: 5px;
+}
+
+.main-header__button_type_search:hover ~ .main-header__popup-wrapper_search {
+  visibility: visible;
+}
+
+.main-header__popup-wrapper_search:hover {
+  visibility: visible;
+}
+
+.main-header__popup_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 341px;
+  height: 84px;
+
+  border-radius: 5px;
+  background-color: #f8f7f4;
+
+  box-shadow: 0 10px 15px 3px rgb(0 0 0/ 50%);
+}
+
+.main-header__popup_search input {
+  width: 311px;
+  height: 44px;
+}
+
+.main-header__popup-wrapper_login {
+  position: absolute;
+  z-index: 1;
+  top: 57px;
+  right: 135px;
+
+  visibility: hidden;
+
+  padding-top: 5px;
+}
+
+.main-header__button_type_login:hover ~ .main-header__popup-wrapper_login {
+  visibility: visible;
+}
+
+.main-header__popup-wrapper_login:hover {
+  visibility: visible;
+}
+
+.main-header__popup_login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 277px;
+  height: 214px;
+
+  border-radius: 5px;
+  background-color: #f8f7f4;
+
+  box-shadow: 0 10px 15px 3px rgb(0 0 0/ 50%);
+}
+
+.main-header__popup_login input {
+  width: 241px;
+  height: 44px;
+}
+
+.main-header__popup_login button {
+  padding: 10px 25px;
+}
+
+.main-header__login-panel {
+  display: flex;
+  justify-content: space-between;
+
+  width: 241px;
+}
+
+.main-header__login-links {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
 .main-header__information {
   display: flex;
   justify-content: right;
@@ -338,9 +439,46 @@ body {
   text-decoration-color: #ffbc9e;
 }
 
+.link_black {
+  color: #323232;
+}
+
 .link_black:hover {
   color: #e84d37;
   text-decoration-color: #e84d37;
+}
+
+.input {
+  padding: 0 20px;
+
+  transition-duration: 0.2s;
+
+  transition-property: border, box-shadow;
+
+  border: 1px solid rgb(0 0 0 / 20%);
+
+  border-radius: 5px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.input:hover {
+  border: 1px solid rgb(0 0 0 / 40%);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 40%);
+}
+
+.input:focus {
+  border: 1px solid #8fbdec;
+  outline: none;
+  box-shadow: 0 0 0 1px #8fbdec;
+}
+
+.input::placeholder {
+  color: rgb(0 0 0 / 40%);
+
+  font-weight: 400;
 }
 
 .promotions-slider {
@@ -617,8 +755,6 @@ body {
 }
 
 .news__link {
-  color: #323232;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -659,36 +795,6 @@ body {
   width: 368px;
   height: 44px;
   margin-top: 20px;
-  padding: 0 20px;
-
-  transition-duration: 0.2s;
-
-  transition-property: border, box-shadow;
-
-  border: 1px solid rgb(0 0 0 / 20%);
-
-  border-radius: 5px;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.subscribe input:hover {
-  border: 1px solid rgb(0 0 0 / 40%);
-  box-shadow: 0 0 0 1px rgb(0 0 0 / 40%);
-}
-
-.subscribe input:focus {
-  border: 1px solid #8fbdec;
-  outline: none;
-  box-shadow: 0 0 0 1px #8fbdec;
-}
-
-.subscribe input::placeholder {
-  color: rgb(0 0 0 / 40%);
-
-  font-weight: 400;
 }
 
 .onmap {

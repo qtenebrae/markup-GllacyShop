@@ -26,10 +26,10 @@
                   <div class="main-header__popup-wrapper_catalog">
                     <ul class="main-header__popup_catalog">
                       <li><span>Новинки</span></li>
-                      <li><a href="">Сливочное</a></li>
-                      <li><a href="">Щербеты</a></li>
-                      <li><a href="">Фруктовый лед</a></li>
-                      <li><a href="">Мелорин</a></li>
+                      <li><a href="#">Сливочное</a></li>
+                      <li><a href="#">Щербеты</a></li>
+                      <li><a href="#">Фруктовый лед</a></li>
+                      <li><a href="#">Мелорин</a></li>
                     </ul>
                   </div>
                 </li>
@@ -37,8 +37,30 @@
                 <li><a href="#" class="main-header__nav-link">О Компании</a></li>
               </ul>
               <ul class="main-header__navigation_user">
-                <li><button type="button" class="main_header__button main-header__button_type_search"></button></li>
-                <li><button type="button" class="main_header__button main-header__button_type_login">Вход</button></li>
+                <li>
+                  <button type="button" class="main_header__button main-header__button_type_search"></button>
+                  <div class="main-header__popup-wrapper_search">
+                    <div class="main-header__popup_search">
+                      <input type="text" placeholder="Крем-брюле" class="input" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <button type="button" class="main_header__button main-header__button_type_login">Вход</button>
+                  <div class="main-header__popup-wrapper_login">
+                    <form method="POST" class="main-header__popup_login">
+                      <input type="text" placeholder="email@example.com" class="input" />
+                      <input type="text" placeholder="*******" class="input" />
+                      <div class="main-header__login-panel">
+                        <button class="button" type="button">Войти</button>
+                        <div class="main-header__login-links">
+                          <a href="#" class="link link_black">Забыли пароль?</a>
+                          <a href="#" class="link link_black">Новая регистрация</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
                 <li><button type="button" class="main_header__button main-header__button_type_basket">Пусто</button></li>
               </ul>
             </nav>
@@ -198,7 +220,7 @@
               </p>
               <form action="">
                 <label for="subscribe-form" class="visually-hidden">Ваш емейл</label>
-                <input id="subscribe-form" type="email" name="email" value="" placeholder="email@example.com" />
+                <input id="subscribe-form" type="email" name="email" value="" placeholder="email@example.com" class="input" />
                 <button class="button button_subscribe" type="submit">Отправить</button>
               </form>
             </section>
