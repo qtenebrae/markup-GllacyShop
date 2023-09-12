@@ -663,8 +663,52 @@ body {
 
 .hits__item::before {
   position: absolute;
+  z-index: 3;
 
   content: url("../img/hit.svg");
+}
+
+.hits__hover-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: -13px;
+
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+
+  width: 293px;
+  height: 405px;
+
+  border-radius: 5px;
+  background-color: rgba(255 255 255 / 30%);
+  box-shadow: 0 20px 20px 0 rgb(0 0 0 / 40%);
+}
+
+.hits__item:hover .hits__hover-wrapper {
+  visibility: visible;
+}
+
+.hits__item:hover .hits__image,
+.hits__item:hover .hits__link {
+  position: relative;
+  z-index: 2;
+}
+
+.hits__item:hover .hits__cost {
+  z-index: 3;
+}
+
+.hits__item:hover .hits__hover-wrapper {
+  visibility: visible;
+}
+
+.hits__button {
+  position: absolute;
+  bottom: 15px;
+
+  padding: 12px 15px;
 }
 
 .hits__cost {
